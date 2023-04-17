@@ -1,0 +1,15 @@
+/* Author: Dryelen Reis */
+/* This style sheet is used for the body and font styles of all pages */
+body 
+{ 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:#13315C; 
+    
+}
+
+p,h1,h2,h3,h4,h5,h6,label
+{
+    color: azure;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  
+}

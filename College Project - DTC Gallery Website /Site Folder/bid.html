@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29FCQDQYD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-L29FCQDQYD');
+  </script>
+
+  <meta name="keywords" content="visual art institution, art gallery, art auction ireland">
+  <meta name="description" content="Available paiting's gallery and order page to place bids for online auction">
+  
+  <!-- Bootstrap CSS v5.2.1 -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+   <!-- Script -->
+	 <script src="javascript/script.js"></script>
+ 
+   <!-- CSS Navigation bar -->
+   <link rel="stylesheet" href="style/navbar.css">
+ 
+   <!-- CSS Background -->
+   <link rel="stylesheet" href="style/background.css">
+ 
+    <!-- CSS Bid -->
+   <link rel="stylesheet" href="style/bidStyle.css">
+  
+    <!-- CSS Footer -->
+    <link rel="stylesheet" href="style/footer.css">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>DTC Art Gallery</title>
+
+</head>
+
+<body>
+  <header>
+      
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">DTC Art Gallery</a>
+
+        <!-- button visible when small screens -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- div hidden when small screens -->
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="store.html" aria-current="page">Store <span class="visually-hidden">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <form class="d-flex my-2 my-lg-0">
+            <input class="form-control me-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+
+      </div>
+
+    </nav>
+     
+  </header>
+
+  <main>
+    <div class="container">
+        <div class="row justify-content-right align-items-center g-2">
+            <div class="col-md-6">
+                 <!-- tried to use querystring to tranfer paiting title and img to the order page
+                
+                <p id="product">Product name</p>
+                <span id="result-product"></span>
+                
+                <img id="picture" src="img/aaaaaa.JPG" alt="product image">
+                <div class="col-md-4">
+              -->
+                    
+                    <h5>Oil painting , 2002</h5>
+                    <h6>Dimensions: 45x65</h6>
+                                      
+                    <p> a rotunda, floral wire, polaroid photographs from the artists collection.
+                        This work is arestrained, nude small collages from cut paper consisting of prison which is reminiscent of landscape and the body.
+                        The work deploys images of luxury residential skyscrapers as gesturing toward ambiguous futures, suspended temporality and the destabilization of the reality principle.
+                    </p> 
+                </div>
+        </div>
+          <!-- Order/Bid form -->
+          <div class="row justify-content-right align-items-center g-2">
+            <div class="col-md-4"> 
+                <form method ="post">
+                    <div class="mb-3">
+                      <p>Highest Bid: € 554.00</p>
+                      <label for="currency-field">Current Price</label> 
+                      <input type="number" id="currency-field" pattern="^\€\d{1,3}(,\d{3})*(\.\d+)?$" value = "" data-type="currency" placeholder="€1,000,000.00" required="true" min="0" step="0.01">
+                      <small id="helpId" class="form-text text-muted">Enter your bid</small>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label" >
+                        Add to Watch List
+                        </label> 
+                    </div>
+                </form>
+
+                <div class="col-md-2"></div>
+                
+
+                <!-- Modal trigger button -->
+                <button type="button" class="btn btn-primary btn-md" data-bs-toggle="modal" data-bs-target="#modalId">
+                Place Bid
+                </button>
+                
+                <!-- Modal Body -->
+                <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                        <div class="modal-content">
+                           <!-- Modal header -->
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalTitleId" style = "color:midnightblue" >Login</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                             <!--Login form-->
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                <label for="Username" class="form-label">Username</label>
+                                <input type="text" id="Username" class="form-control"  aria-describedby="helpId" placeholder="username" required="true">
+                                <small id="helpId2" class="form-text text-muted">Insert your username</small>
+                                </div>
+                            <div class="mb-3">
+                                <label for="Password" class="form-label">Password</label>
+                                <input type="password" id="password" class="form-control" placeholder="password" required="true">
+                                <button type="submit" class="btn btn-outline-success" onclick="confirmLogin()">Submit</button>
+                            </div>
+                            </div>
+                             <!--Modal footer-->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" onclick="confirmBid()" >Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>          
+        
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="img/AuctionHammer.JPG" alt="auction hammer icon">
+      <div class="card-body">
+          <h5 class="card-title">End date: 22nd December 2022</h5><br>
+          <p class="card-text">Active Bidders: 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Watching: 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Bids placed: 25</p>
+      </div>
+    </div>
+           
+        
+
+  </main>
+
+ <!-- Footer extracted and adapted from "https://mdbootstrap.com/docs/standard/navigation/footer/" -->
+ <footer class="bg-transparent text-center">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Form -->
+    <form>
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+        <!--Grid column-->
+        <div class="col-auto">
+          <p class="pt-2">
+            <!-- Facebook -->
+            <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank" rel="noopener noreferrer"></a>
+          </p>
+        </div>
+        <!--Grid column-->
+        
+        <!--Grid column-->
+        <div class="col-auto">
+          <p class="pt-2">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank" rel="noopener noreferrer"></a>
+          </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-5 col-12">
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="form5Example27" class="form-control" placeholder="Enter your email and sign up for our newsletter" required/>
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-auto">
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-secondary mb-4">
+            Subscribe
+          </button>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </form>
+    <!-- Section: Form -->
+  </div>
+  <!-- Grid container -->
+
+  <div class="text-center p-2" id="footerBarId">
+    DTC Art Gallery is an independent website 2022
+  </div>
+</footer>
+
+</body>
+
+</html>

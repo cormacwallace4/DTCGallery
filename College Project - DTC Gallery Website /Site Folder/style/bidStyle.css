@@ -1,0 +1,54 @@
+/* Author: Dryelen Reis */
+/* This style sheet is used for About page, Bid form and login modal */
+
+/*Styling for card on the botton of bid page*/
+.card
+{
+    background-color:  #32434e;
+    text-align: center;
+    justify-content: center;
+    position: inherit;
+}
+
+.card-img-top
+{
+    width: 50px;
+    margin-top: 20px;
+
+}
+
+
+/**Styling for About page**/
+#credits
+{
+    font-size: smaller;
+    text-align: center;
+    justify-content: center;
+    color: azure;
+}
+
+/*Styling for social media images*/
+.social img
+{
+    width: 50px;
+    border-radius: 30%;
+ 
+}
+
+/*hover to increase social media images*/
+.social img:hover
+{
+    width: 55px;
+    border-radius: 30%;
+}
+
+
+/*frame image styling*/
+#frame
+{   
+  width: 100%;
+  padding: 15px;
+  position: auto;
+  border-radius: 10%;
+}
+

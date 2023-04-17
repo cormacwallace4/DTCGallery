@@ -1,0 +1,16 @@
+/* Navigation bar background color */
+nav{
+  background-color: #8DA9C4;
+}
+
+/* Font color for nav bar. */
+.nav-link {
+  color: black;
+  font-size: 17px;
+}
+
+/* Color of company name on the nav bar. */
+.navbar-brand {
+  color: black;
+  font-size: 22px;
+}

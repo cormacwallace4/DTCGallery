@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29FCQDQYD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-L29FCQDQYD');
+    </script>
+
+    <!-- google search tag -->
+    <meta name="google-site-verification" content="t7mLhHK88YF6SJpd73m3Bh6JIgbpCwdJeqakWnYAp8w" />
+
+    <meta name="title" content="DTC Art Gallery ">
+    <meta name="description" content="NCI Students Web project, Art gallery and online auction store in Ireland">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+      <link rel="stylesheet" href="style/style.css"> 
+      <script src="javascript/script.js"> </script> 
+
+    <!-- CSS navigation bar -->
+    <link rel="stylesheet" href="style/navbar.css">
+
+    <!-- CSS Footer -->
+    <link rel="stylesheet" href="style/footer.css">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>DTC Art Gallery</title>
+
+  </head>
+
+  <body>
+    <header>
+      
+      <!-- navigation -->
+      <nav class="navbar navbar-expand-md navbar-dark">
+
+        <div class="container">
+
+          <!-- Brand -->
+          <a class="navbar-brand" href="index.html">DTC Art Gallery</a>
+
+          <!-- button visible when small screens -->
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- div hidden when small screens -->
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="store.html">Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <!-- Search field and button-->
+            <form class="d-flex my-2 my-lg-0">
+              <input class="form-control me-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+
+        </div>
+
+      </nav>
+      
+    </header>
+    <main>
+      <!-- Homepage background image with button leading to the store page-->
+      <div  class= "container" id="img_container">
+          <div class="row">
+              <div class="col-xl-12">
+                  <img src="img/homepagebg.jpeg" class="img-fluid" alt="Homepage background" id="homepagebg" />
+                  <div class="img-overlay">
+                      <button class="btn btn-md btn-success" id="visitstorebtn" onclick="revealStore();">VISIT OUR STORE</button>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Paragraph on about us, events and contact us page with picture and link to each page. Allows user to 
+        read a bit about each page before they decide to click into it.-->
+          <div class= "container" id="pages_container">
+            <div class="row">
+                <div class="col-xl-6"><br><br>
+                    <h2 style="color: rgb(0, 0, 0);">About Us</h2><br>
+                    <p id="description" style="color: rgb(0, 0, 0);">DTC Art Gallery is one of 
+                        Ireland’s flagship art museums and the country’s leading visual arts institution.<br><br>
+                        As Dublin's main art museum, we’re here to champion artists and to serve the widest possible audience as
+                        a centre of excellence for the interpretation and display of 
+                        Irish art, art education and the exchange of ideas.</p>
+                  <button class="btn btn-md btn-success" id="readmorebtn" onclick="revealAbout();">Read More</button>
+                </div>
+    
+                <div class="col-xl-6">
+                    <img src="img/about-img.jpeg" class="img-fluid"  alt="AboutusImg" id="pagesImg"/>
+                </div>
+            </div>
+        
+    
+        
+            <div class="row">
+                <div class="col-xl-6">
+                  <img src="img/events-img.jpeg" class="img-fluid"  alt="EventImg" id="pagesImg"/>
+                </div>
+    
+                <div class="col-xl-6"><br><br>
+                    <h2 style="color: rgb(0, 0, 0);">Events</h2><br>
+                    <p id="description" style="color: rgb(0, 0, 0);">We are more than an online art gallery! To give you the best options to experience 
+                        art we regularly organize art exhibitions and pop-up art galleries all around the world.<br><br>
+                        You can join a group exhibition or book a free private view in the fields of abstract painting, fine arts photography and sculpture.</p>
+                    <button class="btn btn-md btn-success" id="readmorebtn" onclick="revealEvents();">Read More</button>
+                </div>
+            </div>
+       
+    
+    
+            <div class="row">
+                <div class="col-xl-6"><br><br>
+                    <h2 style="color: rgb(0, 0, 0);">Contact Us</h2><br>
+                    <p id="description" style="color: rgb(0, 0, 0);">Here at DTC Gallery we’re super friendly and always ready to help. <br><br>
+                        If you have any questions or would like to get more information about DTC Art Gallery, we'd love to hear form you.</p>
+                  <button class="btn btn-md btn-success" id="readmorebtn" onclick="revealContact();">Read More</button>
+                </div>
+    
+                <div class="col-xl-6">
+                  <img src="img/contact-img.jpeg" class="img-fluid" class="img-responsive" alt="ContactImg" id="pagesImg"/>
+                </div>
+            </div>
+        </div>
+      
+    </main>
+
+    <!-- Footer extracted and adapted from "https://mdbootstrap.com/docs/standard/navigation/footer/" -->
+    <footer class="bg-transparent text-center">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Form -->
+        <form>
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <!-- Facebook -->
+                <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank" rel="noopener noreferrer"></a>
+              </p>
+            </div>
+            <!--Grid column-->
+            
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank" rel="noopener noreferrer"></a>
+
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form5Example27" class="form-control" placeholder="Enter your email and sign up for our newsletter" required/>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-secondary mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+        <!-- Section: Form -->
+      </div>
+      <!-- Grid container -->
+    
+      <div class="text-center p-2" id="footerBarId">
+        DTC Art Gallery is an independent website 2022
+      </div>
+    </footer>
+    
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  </body>
+
+</html>

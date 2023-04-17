@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29FCQDQYD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-L29FCQDQYD');
+  </script>
+
+  <meta name="keywords" content="visual art institution, art gallery, art auction ireland">
+  <meta name="description" content="Available paiting's gallery and order page to place bids for online auction">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css"> 
+    <script src="javascript/script.js"> </script> 
+
+  <!-- CSS navigation bar -->
+  <link rel="stylesheet" href="style/navbar.css">
+  
+  <!-- CSS Footer -->
+  <link rel="stylesheet" href="style/footer.css">
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>DTC Art Gallery</title>
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+
+          <div class="container">
+
+        <!-- Brand -->
+            <a class="navbar-brand" href="index.html">DTC Art Gallery</a>
+
+        <!-- button visible when small screens -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <!-- div hidden when small screens -->
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="store.html" aria-current="page">Store <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+           <!-- Search field and button-->
+          <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+            </div>
+      </div>
+    </nav>
+    
+  </header>
+  <main>
+
+    <br>
+    <br>
+     <!-- Containers used throughout to ensure the website is responsive. -->
+     <!-- Container containing the welcome message and store description-->
+    <div class="container">
+        
+            <div class="col-sm-12">
+                <h1 style="color: white;">Welcome to our Auction Store</h1>
+                <br>
+                <h3 style="color: white;">All of our paintings below are available for blind auction.</h3>
+                <h5 style="color: white;">Please click on the piece you are interested in to place a bid.</h5>
+            </div>
+        
+    </div>
+     <!-- Container containing all the paintings, when each painting is clicked it leads the user to the order page where they can put a bid in.-->
+    <div class="container">
+
+        <div class="row container-fluid justify-content-center">
+            <div class="col-sm-3">
+                <div id="painting1" class="paintings">  
+                    <img src="img/art1.jpeg" id="art" width="215" height="215" onclick="revealOrderForm();" alt="art1">
+                    <span class="caption" style="color: white;">Cottage on the hill<br>Starting Price: €200</span>
+                    <button type="button" class="moreinfo" id="moreinfo1" onclick="moreinfo1();">More Info</button>
+                </div>
+            </div>
+            
+            <div class="col-sm-3">
+                <div id="painting2" class="paintings">  
+                    <img src="img/art2.jpeg" id="art" width="215" height="215" onclick="revealOrderForm();" alt="art2">
+                    <span class="caption" style="color: white;">Stormy Nights<br>Starting Price: €180</span>
+                    <button type="button" class="moreinfo" id="moreinfo2" onclick="moreinfo2();">More Info</button>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div id="painting3" class="paintings">  
+                    <img src="img/art3.jpeg" id="art" width="215" height="215" onclick="revealOrderForm();" alt="art3">
+                    <span class="caption" style="color: white;">Summers Breeze<br>Starting Price: €250</span>
+                    <button type="button" class="moreinfo" id="moreinfo3" onclick="moreinfo3();">More Info</button>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div id="painting4" class="paintings">  
+                    <img src="img/art4.jpeg" id="art" width="215" height="215" onclick="revealOrderForm();" alt="art4">
+                    <span class="caption" style="color: white;">On The Edge<br>Starting Price: €340</span>
+                    <button type="button" class="moreinfo" id="moreinfo4" onclick="moreinfo4();">More Info</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row container-fluid justify-content-center">
+            <div class="col-sm-3">
+                <div id="painting5" class="paintings">  
+                    <img src="img/art5.jpeg" id="art" width="215" height="215" onclick="revealOrderForm();" alt="art5">
+                    <span class="caption" style="color: white;">Coastal Living<br>Starting Price: €480</span>
+                    <button type="button" class="moreinfo" id="moreinfo5" onclick="moreinfo5();">More Info</button>
+                </div>
+             </div>
+
+             <div class="col-sm-3">
+                <div id="painting6" class="paintings">  
+                    <img src="img/art6.jpeg" id="art" width="215" height="215" onclick="revealOrderForm();" alt="art6">
+                    <span class="caption" style="color: white;">Country At Dusk<br>Starting Price: €270</span>
+                    <button type="button" class="moreinfo" id="moreinfo6" onclick="moreinfo6();">More Info</button>
+                </div>
+            </div>
+            
+            <div class="col-sm-3">
+                <div id="painting7" class="paintings">  
+                    <img src="img/art7.jpeg" id="art" width="215" height="215" onclick="revealOrderForm();" alt="art7">
+                    <span class="caption" style="color: white;">Afternoon Tea<br>Starting Price: €350</span>
+                    <button type="button" class="moreinfo" id="moreinfo7" onclick="moreinfo7();">More Info</button>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div id="painting8" class="paintings">  
+                    <img src="img/art8.jpeg" id="art" width="215" height="215" onclick="revealOrderForm();" alt="art8">
+                    <span class="caption" style="color: white;">Fields of Frost<br>Starting Price: €290</span>
+                    <button type="button" class="moreinfo" id="moreinfo8" onclick="moreinfo8();">More Info</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row container-fluid justify-content-center">
+            <div class="col-sm-3">
+                <div id="painting9" class="paintings">  
+                    <img src="img/art9.jpeg" id="art" width="215" height="215" onclick="revealOrderForm();" alt="art9">
+                    <span class="caption" style="color: white;">Autumn River<br>Starting Price: €480</span>
+                    <button type="button" class="moreinfo" id="moreinfo9" onclick="moreinfo9();">More Info</button>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div id="painting10" class="paintings">  
+                    <img src="img/art10.jpeg" id="art" width="215" height="215" onclick="revealOrderForm();" alt="art10">
+                    <span class="caption" style="color: white;">At The Seaside<br>Starting Price: €270</span>
+                    <button type="button" class="moreinfo" id="moreinfo10" onclick="moreinfo10();">More Info</button>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div id="painting11" class="paintings">  
+                    <img src="img/art11.jpeg" id="art" width="215" height="215" onclick="revealOrderForm();" alt="art11">
+                    <span class="caption" style="color: white;">Windy Walk<br>Starting Price: €250</span>
+                    <button type="button" class="moreinfo" id="moreinfo11" onclick="moreinfo11();">More Info</button>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div id="painting12" class="paintings">  
+                    <img src="img/art12.jpeg" id="art" width="215" height="215" onclick="revealOrderForm();" alt="art12">
+                    <span class="caption" style="color: white;">In The Mountains<br>Starting Price: €290</span>
+                    <button type="button" class="moreinfo" id="moreinfo12" onclick="moreinfo12();">More Info</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+
+
+  </main>
+  <!-- Footer extracted and adapted from "https://mdbootstrap.com/docs/standard/navigation/footer/" -->
+  <footer class="bg-transparent text-center">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Form -->
+      <form>
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <!-- Facebook -->
+              <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank" rel="noopener noreferrer"></a>
+            </p>
+          </div>
+          <!--Grid column-->
+          
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank" rel="noopener noreferrer"></a>
+
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form5Example27" class="form-control" placeholder="Enter your email and sign up for our newsletter" required/>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-secondary mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+      <!-- Section: Form -->
+    </div>
+    <!-- Grid container -->
+  
+    <div class="text-center p-2" id="footerBarId">
+      DTC Art Gallery is an independent website 2022
+    </div>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

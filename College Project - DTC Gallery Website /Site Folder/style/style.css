@@ -1,0 +1,268 @@
+/* Author: Cormac Wallace */
+/* This style sheet is used for the Homepage and Store pages. */
+body { 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:#13315C; 
+    text-align: center; 
+}
+
+/* Below styling is for the homepage top picture with the Visit Our Store button. This is how i kept the 
+button and image in correct position when screen size changes.*/
+#img_container {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 0px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.img-overlay:before {
+    content: ' ';
+    display: block;
+    height: 58%;
+}
+
+/* Styling for the Visit our store button on the homepage */
+#visitstorebtn {
+    display: inline-block;
+    height: 60px;
+    width: 210px;
+    background: rgb(0, 0, 0); 
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+/* Styling to create hover effect when the users mouse is over the button.*/
+#visitstorebtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); 
+    border-color: rgb(0, 0, 0); 
+    border-radius: 10px;
+}
+
+/* Styling for the containers containing snippets of information on the about, events and contact pages on the homepage.*/
+#pages_container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding:0px;
+    background-color: rgb(255, 255, 255);
+}
+
+#description {
+    text-align: center;
+    font-size: 18px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+/* Read more button on the homepage styling  */
+#readmorebtn {
+    display: inline-block;
+    height: 45px;
+    width: 110px;
+    margin-top: 6px;
+    background: rgb(0, 0, 0); 
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+#readmorebtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); 
+    border-color: rgb(0, 0, 0); 
+    border-radius: 10px;
+}
+
+/* I wanted the images to all be the same size so this refers to the about, event and contact images on the homepage. */
+#pagesImg {
+    height: 400px;
+    
+}
+
+
+
+/* Below is all the styling for the store page. */
+
+/* Styling for the images on the store page */
+.paintings {
+    background-color: rgb(255, 255, 255); 
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 3px;
+}
+
+/* hover effect for images on the store page. */
+#art:hover{ 
+    border-style: solid;
+    border-color: #8DA9C4; 
+    border-width: 5px;  
+    cursor: pointer;
+}
+/* Painting names styling. */
+.caption {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+/* More info button styling and hover effect */
+.moreinfo {
+    display: inline-block;
+    height: 25px;
+    width: 70px;
+    background: #8DA9C4; 
+    border: 1px solid rgb(255, 255, 255); 
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 16px;
+    outline: 0;
+    padding: 4px 4px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.moreinfo:hover,
+.moreinfo:active {
+    background-color: white;
+    color: #8DA9C4; 
+}
+
+/* Painting positioning and margins */
+#painting1 { 
+    width: 221px;
+    height: 220px;
+    margin-top: 70px;
+    margin-left: 25px;
+    margin-bottom: 80px;
+}
+
+#painting2 { 
+    width: 221px;
+    height: 220px;
+    margin-top: 70px;
+    margin-left: 25px;
+    margin-bottom: 80px;
+}
+
+#painting3 { 
+    width: 221px;
+    height: 220px;
+    margin-top: 70px;
+    margin-left: 25px;
+    margin-bottom: 80px;
+}
+
+#painting4 { 
+    width: 221px;
+    height: 220px;
+    margin-top: 70px;
+    margin-left: 25px;
+    margin-bottom: 80px;
+}
+
+#painting5 { 
+    width: 221px;
+    height: 220px;
+    margin-top: 110px;
+    margin-left: 25px;
+    margin-bottom: 80px;
+}
+
+#painting6 { 
+    width: 221px;
+    height: 220px;
+    margin-top: 110px;
+    margin-left: 25px;
+    margin-bottom: 80px;
+}
+
+#painting7 { 
+    width: 221px;
+    height: 220px;
+    margin-top: 110px;
+    margin-left: 25px;
+    margin-bottom: 80px;
+}
+
+#painting8 { 
+    width: 221px;
+    height: 220px;
+    margin-top: 110px;
+    margin-left: 25px;
+    margin-bottom: 80px;
+}
+
+#painting9 {  
+    width: 221px;
+    height: 220px;
+    margin-top: 110px;
+    margin-left: 25px;
+    margin-bottom: 100px;
+}
+
+#painting10 { 
+    width: 221px;
+    height: 220px;
+    margin-top: 110px;
+    margin-left: 25px;
+    margin-bottom: 100px;
+}
+
+#painting11 { 
+    width: 221px;
+    height: 220px;
+    margin-top: 110px;
+    margin-left: 25px;
+    margin-bottom: 100px;
+}
+
+#painting12 {  
+    width: 221px;
+    height: 220px;
+    margin-top: 110px;
+    margin-left: 25px;
+    margin-bottom: 100px;
+}
